@@ -1094,4 +1094,7 @@ ifneq (true,$(PRODUCT_FULL_TREBLE))
 $(eval include vendor/nexus/sepolicy/sepolicy.mk)
 endif
 
+# Rules for QCOM targets
+include $(TOPDIR)vendor/qcom/build/core/qcom_target.mk
+
 include $(BUILD_SYSTEM)/dumpvar.mk
